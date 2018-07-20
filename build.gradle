@@ -42,4 +42,6 @@ dependencies {
     // rest doc 4 增加依赖；这个依赖很重要，就算其他步骤都配置好了，这里依赖没有增加
     // 将不会看到被转换的代码片断
     asciidoctor "org.springframework.restdocs:spring-restdocs-asciidoctor:${springRestdocsVersion}"
+
+    compile 'com.alibaba:fastjson:1.2.47'
 }

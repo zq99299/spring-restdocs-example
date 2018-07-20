@@ -2,6 +2,7 @@ package cn.mrcode.example.spring.restdocs.springrestdocsexample;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
@@ -34,6 +35,17 @@ public class HelloWordDocsController {
     @PostMapping("/fun3")
     public Book fun3(Book book) {
         book.setAuthors(new String[]{"张三丰", "张4丰", "张5丰"});
+        return book;
+    }
+
+    /**
+     * 请求和响应都是json串的示例
+     * @param book
+     * @return
+     */
+    @PostMapping("/fun4")
+    public Book fun4(@RequestBody Book book) {
+        book.setAuthors(new String[]{"mrcode", "张4丰", "张5丰"});
         return book;
     }
 }

@@ -1,8 +1,16 @@
 = API列表
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
 :toc: left
+:toc-title: 目录
+:toclevels: 4
+:sectlinks:
 
 include::./fun1_summary_2.adoc[]
 
 include::./fun3.adoc[]
 
 include::./fun3_1.adoc[]
+
+include::./fun4.adoc[]

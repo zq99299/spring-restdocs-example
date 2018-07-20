@@ -1,0 +1,21 @@
+== fun4 API
+
+.AP地址
+
+include::{snippets}/fun4/curl-request.adoc[]
+
+.HTTP request
+
+include::{snippets}/fun4/http-request.adoc[]
+
+.Request fields
+include::{snippets}/fun4/request-fields.adoc[]
+
+.HTTP response
+
+include::{snippets}/fun4/http-response.adoc[]
+
+.Response fields
+include::{snippets}/fun3_1/response-fields.adoc[]
+
+
