@@ -1,0 +1,13 @@
+== fun1 API
+
+=== API地址
+
+include::{snippets}/fun1/curl-request.adoc[]
+
+.HTTP request:
+
+include::{snippets}/fun1/http-request.adoc[]
+
+.HTTP response:
+
+include::{snippets}/fun1/http-response.adoc[]
