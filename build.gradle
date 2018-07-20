@@ -1,0 +1,46 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.3.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+plugins {
+    // rest doc 2 转换成html的插件
+    id "org.asciidoctor.convert" version "1.5.3"
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'cn.mrcode.example.spring.restdocs'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    // rest doc 1  org.asciidoctor.convert 插件不在中央仓库，增加该仓库地址
+    maven { url 'https://repo.spring.io/libs-snapshot' }
+}
+
+ext {
+    // rest doc 3 定义版本号和代码片断的输出目录
+    springRestdocsVersion = '2.0.2.BUILD-SNAPSHOT'
+    snippetsDir = file('build/generated-snippets')
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
+
+    // rest doc 4 增加依赖；这个依赖很重要，就算其他步骤都配置好了，这里依赖没有增加
+    // 将不会看到被转换的代码片断
+    asciidoctor "org.springframework.restdocs:spring-restdocs-asciidoctor:${springRestdocsVersion}"
+}

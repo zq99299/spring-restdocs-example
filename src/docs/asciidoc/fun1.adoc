@@ -1,0 +1,3 @@
+= fun1 api 文档
+
+operation::fun1[]
