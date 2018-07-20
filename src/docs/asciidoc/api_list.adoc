@@ -4,3 +4,5 @@
 include::./fun1_summary_2.adoc[]
 
 include::./fun3.adoc[]
+
+include::./fun3_1.adoc[]

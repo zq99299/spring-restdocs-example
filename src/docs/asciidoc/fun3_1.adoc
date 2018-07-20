@@ -1,0 +1,21 @@
+== fun3_1 API
+
+.AP地址
+
+include::{snippets}/fun3_1/curl-request.adoc[]
+
+.HTTP request
+
+include::{snippets}/fun3_1/http-request.adoc[]
+
+.Request fields
+include::{snippets}/fun3_1/request-parameters.adoc[]
+
+.HTTP response
+
+include::{snippets}/fun3_1/http-response.adoc[]
+
+.Response fields
+include::{snippets}/fun3_1/response-fields.adoc[]
+
+
