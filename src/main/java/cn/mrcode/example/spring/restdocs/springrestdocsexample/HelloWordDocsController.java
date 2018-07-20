@@ -1,6 +1,7 @@
 package cn.mrcode.example.spring.restdocs.springrestdocsexample;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
@@ -30,7 +31,7 @@ public class HelloWordDocsController {
      * @param book
      * @return
      */
-    @GetMapping("/fun3")
+    @PostMapping("/fun3")
     public Book fun3(Book book) {
         book.setAuthors(new String[]{"张三丰", "张4丰", "张5丰"});
         return book;

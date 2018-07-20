@@ -1,0 +1,13 @@
+== fun3 API
+
+.AP地址
+
+include::{snippets}/fun3/curl-request.adoc[]
+
+.HTTP request
+
+include::{snippets}/fun3/http-request.adoc[]
+
+.HTTP response
+
+include::{snippets}/fun3/http-response.adoc[]

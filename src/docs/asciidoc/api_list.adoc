@@ -2,3 +2,5 @@
 :toc: left
 
 include::./fun1_summary_2.adoc[]
+
+include::./fun3.adoc[]
