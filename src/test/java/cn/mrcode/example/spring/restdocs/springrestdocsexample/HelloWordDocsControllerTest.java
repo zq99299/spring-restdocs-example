@@ -68,6 +68,8 @@ public class HelloWordDocsControllerTest {
 
         mockMvc.perform(
                 MockMvcRequestBuilders.post("/fun3")
+                        // post 参数请求文档地址
+                        // https://docs.spring.io/spring-restdocs/docs/2.0.2.RELEASE/reference/html5/#documenting-your-api-request-parameters
                         // 表单提交是不能提交一个对象的，只能提交kv的形式
                         .param("name", "《spring resdocs进阶篇》")
                         .param("price", "13.2")
